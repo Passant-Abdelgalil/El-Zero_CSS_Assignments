@@ -1,0 +1,44 @@
+div{
+  maring: 0;
+  top:calc((100% - 250px)/2);
+  left:calc((100% - 400px)/2);
+  position:absolute;
+  width: 400px;
+  height:250px;
+  padding:20px;
+  border-left: 3px solid blue;
+  border-right: 3px solid blue;
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+  background-color:#EEE;
+  line-height:2;
+  font-size:20px;
+}
+span{
+  position:absolute;
+  float:right;
+  display:inline-block;
+  background-color:blue;
+  padding: 1px 20px;
+  color:white;
+}
+.top-left{
+  top:calc((100% - 335px)/2);
+  left:calc((100% - 495px)/2);
+  border-right: 3px solid red;
+}
+.top-right{
+  top:calc((100% - 335px)/2);
+  border-left: 3px solid red;
+  right:calc((100% - 495px)/2);
+}
+.bottom-right{
+  bottom:calc((100% - 335px)/2);
+  right:calc((100% - 495px)/2);
+  border-left: 3px solid red;
+}
+.bottom-left{
+ bottom:calc((100% - 335px)/2); 
+ left:calc((100% - 495px)/2);
+ border-right: 3px solid red;
+}
