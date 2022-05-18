@@ -1,0 +1,45 @@
+div {
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: inline-block;
+  background-color: #eee;
+  box-shadow: 5px 5px #0191ff, -5px -5px #d20062;
+  /*width is now 120 (100 + 10 * 2)*/
+  /*half the width => circle*/
+  border-radius: 60px;
+  border: 3px solid;
+  counter-increment: instance-number;
+  position: relative;
+}
+
+div::before {
+  content: counter(instance-number);
+  background-color: black;
+  color: white;
+  width: 10px;
+  height: 20px;
+  padding: 1px 7px;
+  /*width is now 24*/
+  border-radius: 12px;
+  position: absolute;
+  /*half the height (20 + 2)/2 */
+  top: -11px;
+  left: 50%;
+  /*half the width (10+2*7)/2 */
+  margin-left: -12px;
+}
+
+div::after {
+  width: 70px;
+  height: 20px;
+  content: "Element";
+  position: absolute;
+  top: 50%;
+  /*half the height (20px)*/
+  margin-top: -10px;
+  left: 50%;
+  /*half the width (70px/2)*/
+  margin-left: -35px;
+}

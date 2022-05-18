@@ -1,0 +1,13 @@
+.circle {
+  color: red;
+  background-color: #eee;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "sans-serif";
+  border-radius: 100px;
+  box-shadow: 6px 0px red, -6px 0px blue;
+  font-weight: bold;
+}

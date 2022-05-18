@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  font-family: "sans-serif";
+}
+
+p {
+  width: 600px;
+  margin: 20px auto;
+  background-color: #eee;
+  font-size: 20px;
+  padding: 20px;
+  caret-color: red;
+  position: relative;
+  color: #909396;
+}
+p::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: -3px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  background-image: linear-gradient(
+    to right,
+    #de4b41,
+    #de4b41 50%,
+    #009688 50%
+  );
+}
+p:focus {
+  color: black;
+}

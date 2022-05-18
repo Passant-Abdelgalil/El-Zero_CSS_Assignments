@@ -1,0 +1,28 @@
+:root {
+  --padding: 20px;
+}
+* {
+  box-sizing: border-box;
+  color: white;
+  font-weight: bold;
+  font-family: "sans-serif";
+}
+
+.grid {
+  background-color: #ddd;
+  padding: var(--padding);
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-rows: 90% auto;
+  grid-template-columns: auto 43% 43% auto;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.grid div {
+  background-color: #3f3f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,26 @@
+:root {
+  --padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  color: white;
+  font-weight: bold;
+  font-family: "sans-serif";
+}
+
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  display: grid;
+  grid-template-areas: "cont cont";
+  align-content: space-between;
+  grid-gap: 20px;
+}
+.grid div {
+  background-color: #ea1e63;
+  font-size: 20px;
+  text-align: center;
+}

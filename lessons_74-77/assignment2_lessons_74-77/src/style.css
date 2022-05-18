@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+div {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #2096ee;
+  border-bottom-color: transparent;
+  position: relative;
+  margin: 40px auto;
+  border-radius: 50%;
+  animation: spin-one 1s linear paused;
+  animation-fill-mode: both;
+}
+div::after {
+  padding: 10px;
+  left: -15px;
+  top: -15px;
+  animation: spin-two 1.5s linear paused;
+  border: 5px solid #ffaf17;
+}
+div::before {
+  padding: 20px;
+  left: -25px;
+  top: -25px;
+  animation: spin-three 2s linear paused;
+  border: 5px solid black;
+}
+div::after,
+div::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  animation-fill-mode: both;
+}
+div:hover,
+div:hover::before,
+div:hover::after {
+  -moz-animation-play-state: running;
+  -moz-animation-iteration-count: infinite;
+}
+@keyframes spin-one {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-two {
+  0% {
+    transform: rotate(0deg);
+  }
+  1% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-three {
+  0% {
+    transform: rotate(0deg);
+  }
+  1% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,56 @@
+:root {
+  --padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  color: white;
+  font-weight: bold;
+  font-family: "sans-serif";
+}
+
+.grid {
+  background-color: #ddd;
+  padding: var(--padding);
+  width: 800px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 20px 20px;
+}
+.grid div {
+  background-color: #2196f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eight {
+  order: 1;
+  grid-column: 1 / 4;
+}
+.two {
+  order: 2;
+  grid-column: span 2;
+}
+.three {
+  order: 3;
+}
+.four {
+  order: 4;
+}
+.six {
+  order: 6;
+}
+.five {
+  order: 5;
+  grid-row: span 3;
+  grid-column: 2 / span 2;
+}
+.one {
+  order: 8;
+  grid-column: 1 / 4;
+}
+.seven {
+  order: 7;
+}

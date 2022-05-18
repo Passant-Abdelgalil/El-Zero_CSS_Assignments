@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: "sans-serif";
+}
+
+.grid {
+  background-color: #eee;
+  display: grid;
+  padding: 40px 60px 20px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(6, auto);
+  align-content: center;
+  gap: 10px ;
+}
+.grid div {
+  position: relative;
+  padding: 20px;
+}
+p {
+  line-height: 1.5;
+}
+.title {
+    color: grey;
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.name {
+    font-weight: bold;
+    font-size: 20px;
+}
+.profile {
+    font-weight: bold;
+  padding-bottom: 20px;
+}
+.black {
+  background-color: black;
+  color: white;
+}
+.white {
+  background-color: white;
+  color: black;
+}
+.grid div::after {
+  content: "";
+  border: 2px solid red;
+  position: absolute;
+  width: calc(100% - 4px);
+  left: 0px;
+  bottom: 0px;
+}
+.grid div::before{
+    content:"’’";
+    display: block;
+    letter-spacing: -1px;
+    color: grey;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -10px;
+    right: 5px;
+}
+.shady {
+  grid-row: span 3;
+}
+.mahmoud,
+.ezz-eldin,
+.Osama {
+  grid-column: span 2;
+}
+.mohamed {
+  grid-row: span 2;
+}

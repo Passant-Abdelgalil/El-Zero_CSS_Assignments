@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  font-family: "sans-serif";
+}
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  position: relative;
+  grid-template-rows: 10% auto;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 20px 20px;
+}
+.grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #607d8b;
+  color: white;
+  font-weight: bold;
+  counter-increment: div-counter;
+}
+.grid div:nth-of-type(1)::before {
+  position: absolute;
+  content: "Element " counter(div-counter);
+}
+.grid div:nth-of-type(2)::before {
+  position: absolute;
+  content: "Element " counter(div-counter);
+}
+.grid div:nth-of-type(3)::before {
+  position: absolute;
+  content: "Element " counter(div-counter);
+}
+.grid div:nth-of-type(4)::before {
+  position: absolute;
+  content: "Element " counter(div-counter);
+}
+.grid div:nth-of-type(5)::before {
+  position: absolute;
+  content: "Element " counter(div-counter);
+}
+.grid div:nth-of-type(6)::before {
+  position: absolute;
+  content: "Element " counter(div-counter);
+}

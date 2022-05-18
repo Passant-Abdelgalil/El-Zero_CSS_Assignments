@@ -1,0 +1,79 @@
+:root {
+  --background_color: #eee;
+  --div_color: #ddd;
+  --padding: 15px;
+  --header-footer-height: 10%;
+  --links-section-width: 88%;
+  --content-width: 70%;
+  --main-area-height: 75%;
+  --sidebar-width: 28%;
+  --logo-width: 11%;
+}
+* {
+  box-sizing: border-box;
+  font-family: "sans-serif";
+}
+.page {
+  height: 400px;
+  background-color: var(--background_color);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: var(--padding);
+}
+.page div {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  height: var(--header-footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links li {
+  padding: calc(var(--padding) - 10px);
+}
+
+.header .links {
+  padding-right: var(--padding);
+  list-style: none;
+  width: var(--links-section-width);
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--div_color);
+}
+.header .logo {
+  background-color: var(--div_color);
+  width: var(--logo-width);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: var(--div_color);
+  height: var(--header-footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding);
+}
+.main-area {
+  height: var(--main-area-height);
+}
+.main-area .content {
+  max-width: var(--content-width);
+  padding: var(--padding);
+  background-color: var(--div_color);
+  flex: 3;
+}
+.main-area .sidebar {
+  background-color: var(--div_color);
+  width: var(--sidebar-width);
+  padding: var(--padding);
+}
